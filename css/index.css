@@ -1,0 +1,204 @@
+.main{
+    padding-top: 8.3333vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-content-div{
+    width: 1600px;
+}
+.item-card{
+    float: left;
+    width: 380px;
+    height: 435px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 3px #9A9A9A;
+    border-radius: 10px;
+}
+.items-row{
+    height: 435px;
+    width: 100%;
+}
+.items-row>.item-card:first-child{
+    margin-left: 10px !important;
+}
+.items-row>.item-card:last-child{
+    margin-right: 10px !important;
+}
+.card-picture{
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    margin-top: 72px;
+    margin-left: 12px;
+}
+.card-price{
+    position: absolute;
+    width: 196px;
+    height: 106px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 128px;
+    text-align: center;
+    color: #FF0000;
+    margin-left: 99px;
+    margin-top: 329px;
+}
+.card-old-price{
+    position: absolute;
+    width: 103px;
+    height: 80px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+    color: #979797;
+    margin-top: 351px;
+    margin-left: 12px;
+    text-decoration: line-through;
+}
+.card-product-text{
+    position: absolute;
+    width: 330px;
+    height: 64px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+}
+.cart-box{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(250, 215, 20);
+    border-radius: 8px;
+    margin-top:351px;
+    margin-left: 299px;
+    z-index: 10;
+    overflow: hidden;
+}
+.cart-pic{
+    position: relative;
+    width: 61px;
+    height: 50px;
+    margin-top: 17px;
+    margin-left: 7px;
+}
+.cart-done{
+    display: initial;
+    width: 61px;
+    height: 50px;
+    margin-left: -60px;
+    margin-top: -65px;
+    position: absolute;
+}
+.lds-ellipsis {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+.load-indicator{
+    display: flex;
+    width: 1600px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.loader-cont{
+    transform: scale(2);
+}
+@media screen and (max-width: 1620px) {
+  .main-content-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px){
+    .item-card{
+      margin-right: 0px;
+    }
+}
+@media screen and (max-width: 390px){
+    .cart-box{
+      margin-left: 278px;
+    }
+}
+@media screen and (max-width: 360px){
+  .cart-box{
+    margin-left: 270px;
+  }
+  .card-old-price {
+    font-size: 40px;
+    margin-left: 13px;
+  }
+  .card-price {
+    margin-left: 64px;
+    font-size: 60px;
+  }
+}
